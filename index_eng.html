@@ -1,0 +1,53 @@
+<!DOCTYPE html> <!-- Declares the document type and HTML version -->
+<html>
+<head>
+  <meta charset="UTF-8"> <!-- Specifies the character encoding for the webpage -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Enables compatibility view for Internet Explorer -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Sets viewport settings for responsive design -->
+  <title>CsBe Gradesarchive Login</title> <!-- Sets the title of the webpage -->
+  <link rel="stylesheet" type="text/css" href="styles.css"> <!-- Links to an external CSS stylesheet -->
+</head>
+<body> <!-- The main content of the webpage -->
+  <div class="container"> <!-- Container for the login box -->
+    <div class="login-box"> <!-- Login box -->
+      <h1>Login</h1> <!-- Header indicating the login section -->
+
+      <!-- Login form, redirects to grades_overview_eng.html upon successful submission -->
+      <form action="grades_overview_eng.html"> 
+        <div class="input-group"> <!-- Group for username input -->
+          <label for="username">Username</label> <!-- Label for username field -->
+          <input type="text" id="username" name="username" required> <!-- Username input field -->
+        </div>
+        
+        <div class="input-group-with-button"> <!-- Group for password input with toggle button -->
+          <div class="input-group"> <!-- Inner group for password input -->
+            <label for="password">Password</label> <!-- Label for password field -->
+            <input type="password" id="password" name="password" required> <!-- Password input field -->
+          </div>
+          <!-- Button to toggle password visibility -->
+          <button type="button" id="togglePassword" class="eye-btn">&#128065;</button> 
+        </div>
+
+        <!-- Container for language selection buttons -->
+        <div class="language-container">
+          <a href="index_de.html"><div><button type="button" class="language_de">DE</button></div></a>
+          <a href="index_fra.html"><div><button type="button" class="language_fra">FRA</button></div></a>
+          <a href="index_ita.html"><div><button type="button" class="language_ita">ITA</button></div></a>
+        </div>
+
+        <!-- Register button -->
+        <button type="submit" class="login-button">Register</button>
+        
+        <!-- Reset password button -->
+        <button type="submit" class="reset-button">Reset Password</button>
+
+        <!-- Additional register button -->
+        <button type="submit" class="register-button">register</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- JavaScript file linked at the end for performance -->
+  <script src="script.js"></script>
+</body>
+</html>
