@@ -1,0 +1,56 @@
+<!DOCTYPE html> <!-- Declares the document type and HTML version -->
+<html>
+<head>
+  <meta charset="UTF-8"> <!-- Specifies the character encoding for the webpage -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Enables compatibility view for Internet Explorer -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Sets viewport settings for responsive design -->
+  <title>Notenuebersicht</title> <!-- Sets the title of the webpage -->
+  <link rel="stylesheet" type="text/css" href="styles.css"> <!-- Links to an external CSS stylesheet -->
+  <!-- Includes Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body> <!-- The main content of the webpage -->
+  <nav class="navbar"> <!-- Navigation bar -->
+    <div class="navbar__container">
+      <!-- Info icon -->
+      <i class="fas fa-info-circle"></i>
+    </div>
+  </nav>
+
+  <!-- Button to navigate to the grades adding page -->
+  <a href="grades_adding_de.html" class="noten-button">Noteneintrag</a>
+
+  <h1>Wählen Sie das Semester</h1> <!-- Header asking to choose the semester -->
+
+  <!-- Dropdown form for selecting semester -->
+  <form name="SemesterForm" class="auswahl-button">
+    <select name="Semester" id="semester" size="1">
+      <option value="Auswahl">Auswahl</option>
+      <option value="S1">Semester 1</option>
+      <option value="S2">Semester 2</option>
+      <option value="S3">Semester 3</option>
+      <option value="S4">Semester 4</option>
+      <option value="S5">Semester 5</option>
+    </select>
+  </form>
+
+  <!-- Table for displaying grades -->
+  <table id="gradesTable">
+    <thead>
+      <!-- Column headers -->
+      <tr class="gradesTable"><th>Module</th><th>Note</th><th>Semester</th></tr>
+    </thead>
+    <tbody>
+      <!-- Placeholder rows -->
+      <tr><td>---</td><td>---</td><td>---</td></tr>
+      <tr><td>---</td><td>---</td><td>---</td></tr>
+      <tr><td>---</td><td>---</td><td>---</td></tr>
+      <tr><td>---</td><td>---</td><td>---</td></tr>
+      <tr><td>---</td><td>---</td><td>---</td></tr>
+    </tbody>
+  </table>
+
+  <!-- JavaScript file linked at the end for performance -->
+  <script src="script.js"></script>
+</body>
+</html>
