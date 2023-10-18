@@ -1,0 +1,33 @@
+<!DOCTYPE html> <!-- Declares the document type and HTML version -->
+<html>
+<head>
+  <meta charset="UTF-8"> <!-- Specifies the character encoding for the webpage -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Enables compatibility view for Internet Explorer -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Sets viewport settings for responsive design -->
+  <title>CsBe Insérer des notes</title> <!-- Sets the title of the webpage -->
+  <link rel="stylesheet" type="text/css" href="styles.css"> <!-- Links to an external CSS stylesheet -->
+</head>
+<body> <!-- The main content of the webpage -->
+  <h1>Ajouter une nouvelle entrée</h1> <!-- Header indicating the purpose of the page -->
+
+  <!-- Form to add a new entry -->
+  <form id="addEntryForm"> 
+    <label for="newSubject">Module:</label> <!-- Label for the module input field -->
+    <input type="text" id="newSubject" required> <!-- Text input for entering the module name -->
+
+    <label for="newGrade">Grade:</label> <!-- Label for the grade input field -->
+    <input type="number" id="newGrade" step="0.1" required> <!-- Number input for entering the grade, with decimal support -->
+
+    <label for="newTag">Semestre:</label> <!-- Label for the semester input field -->
+    <input type="text" id="newTag" required> <!-- Text input for entering the semester -->
+
+    <!-- Submit button for the form -->
+    <button type="submit" class="add-button">Ajouter une entrée</button> 
+
+    <!-- Back button to navigate to the previous page -->
+    <a href="grades_overview_fra.html"> 
+      <div><button type="button" class="back-button">Dos</button></div>
+    </a>
+  </form>
+</body>
+</html>

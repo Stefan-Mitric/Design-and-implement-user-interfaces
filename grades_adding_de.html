@@ -1,0 +1,33 @@
+<!DOCTYPE html> <!-- Declares the document type and version of HTML being used -->
+<html>
+<head>
+  <meta charset="UTF-8"> <!-- Specifies the character encoding for the document -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Enables compatibility view for IE -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Sets the viewport properties for responsive design -->
+  <title>CsBe Noteneinfügen</title> <!-- Sets the title of the web page -->
+  <link rel="stylesheet" type="text/css" href="styles.css"> <!-- Links to the external CSS stylesheet -->
+</head>
+<body> <!-- The main content of the page -->
+  <h1>Neuen Eintrag hinzufügen</h1> <!-- Header indicating the purpose of the page -->
+  
+  <!-- Form container to add a new entry -->
+  <form id="addEntryForm" class="form-container"> 
+    <label for="newSubject">Modul:</label> <!-- Label for the subject input field -->
+    <input type="text" id="newSubject" class="custom-input" required> <!-- Text input for the subject -->
+    
+    <label for="newGrade">Note:</label> <!-- Label for the grade input field -->
+    <input type="number" id="newGrade" class="custom-input" step="0.1" required> <!-- Number input for the grade -->
+    
+    <label for="newTag">Semester:</label> <!-- Label for the semester input field -->
+    <input type="text" id="newTag" class="custom-input" required> <!-- Text input for the semester -->
+    
+    <!-- Submit button for the form -->
+    <button type="submit" class="add-button">Eintrag hinzufügen</button> 
+    
+    <!-- Back button to return to the previous page -->
+    <a href="grades_overview_de.html">
+      <div><button type="button" class="back-button">Zurück</button></div>
+    </a>
+  </form>
+</body>
+</html>
